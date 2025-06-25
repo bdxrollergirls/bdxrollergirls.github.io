@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BDX Roller Girls</title>
+    <title>BDX Roller Girls - brb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
 
         :root {
@@ -11,14 +14,18 @@
           --dark-purple: #423B7F;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Poppins", sans-serif;
             background-color: var(--lilac);
             margin: 0;
             padding: 0;
             font-size: 16px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: var(-lilac);
+            font-family: "Funnel Display", sans-serif;
             color: white;
             padding: 1em;
             text-align: center;
@@ -30,6 +37,7 @@
             text-align: center;
         }
         .level1 {
+            font-family: "Funnel Display", sans-serif;
             color: var(--dark-purple);
             font-size: 1.5rem;
         }
@@ -55,8 +63,10 @@
     </header>
 
     <main>
-        <p class="level1"><span aria-hidden="true">🛼 </span>Le site chausse ses roulettes d’été... On revient en roue libre à la rentrée !</p>
-        <p class="level2">Rendez-vous en septembre 2025 avec un site pour une nouvelle saison pleine de glisse et de bonne humeur !</p>
+        <div class="main-message">
+            <p class="level1"><span aria-hidden="true">🛼 </span>Le site chausse ses roulettes d’été... On revient en roue libre à la rentrée !</p>
+            <p class="level2">Rendez-vous en septembre 2025 avec un site pour une nouvelle saison pleine de glisse et de bonne humeur !</p>
+        </div>
     </main>
 
     <footer>
