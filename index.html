@@ -75,6 +75,17 @@
             height: 50px;
             background: var(--dark-purple);
             border-bottom: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            marin-left: 15px;
+        }
+        .circle {
+            background: #FFF5E2;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
         }
         .browser-bottom {
             display: flex;
@@ -104,7 +115,9 @@
     <main>
         <div class="browser">
             <div class="browser-top">
-                
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
             </div>
             <div class="browser-bottom">
                 <p class="level1"><span aria-hidden="true">🛼 </span>On change nos roues !</p>
