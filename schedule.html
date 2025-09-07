@@ -24,15 +24,24 @@
     </header>
 
     <main>
-        <div class="browser">
-            <div class="browser-top">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
+        <div class="browser-windows">
+            <div class="browser">
+                <div class="browser-top">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="browser-bottom">
+                    <p class="level1"><span aria-hidden="true">✨ </span>La rentrée arrive !</p>
+                    <p class="level2">Il est temps de ressortir les patins, régler les roues et nettoyer les roulements ! <br><b>On reprend le 15 septembre</b></p>
+                </div>
             </div>
-            <div class="browser-bottom">
-                <p class="level1"><span aria-hidden="true">✨ </span>La rentrée arrive !</p>
-                <p class="level2">Il est temps de ressortir les patins, régler les roues et nettoyer les roulements ! <br><b>On reprend le 15 septembre</b></p>
+            
+            <div class="browser browser-calendar">
+                <h2 id="month-title">Calendar</h2>
+                <div class="calendar" id="calendar"></div>
+                <hr class="calendar-separator">
+                <div class="events-summary" id="events-summary"></div>
             </div>
         </div>
         
@@ -46,5 +55,6 @@
         </ul>
     </footer>
 
+    <script src="schedule.js"></script>
 </body>
 </html>

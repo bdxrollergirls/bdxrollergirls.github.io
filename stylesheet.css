@@ -4,6 +4,7 @@
     --light-pink: #EDCEE4;
     --light-gray: #B6BFC4;
     --dark-gray: #333;
+    --butter-yellow: #FFF5E2;
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -113,17 +114,36 @@ p {
 .about.browser {
     width: 650px;
 }
+.browser-windows {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+@media (min-width: 700px) {
+    .browser-windows {
+        max-width: 98%;
+    }
+}
 .browser {
-    background: #FFF5E2;
+    background: var(--butter-yellow);
     max-width: 90%;
     width: 500px;
-    height: 100%;
     border-radius: 15px;
     border: 2px solid var(--dark-gray);
     overflow: hidden;
     box-shadow: 10px 10px 0px 0px var(--dark-gray);
     margin: auto;
     transform: translateY(-55px);
+}
+.browser.browser-calendar {
+    margin-top: 40px;
+}
+@media (min-width: 700px) {
+    .browser.browser-calendar {
+        display: flex;
+        flex-direction: column;
+        width: 628px;
+    }
 }
 .browser-top {
     width: 100%;
@@ -175,3 +195,150 @@ footer a{
 footer a:hover{
     color: var(--lilac);
 }
+
+
+
+/* schedule */
+
+.browser-calendar h2#month-title{
+    margin: 20px auto 0 auto;
+    background: var(--butter-yellow);
+    border-radius: 50px;
+    width: max-content;
+    padding: 0 10px;
+    border: 2px solid var(--dark-gray);
+    box-shadow: 4px 4px 0px 0px var(--dark-gray);
+    color: var(--dark-gray);
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 100%;
+    padding: 20px;
+  }
+  .day-header, .day {
+    font-size: 0.9em;
+    line-height: auto;
+    color: var(--dark-gray);
+  }
+  @media (min-width: 700px) {
+    .day-header, .day {
+        border: 2px solid var(--dark-gray);
+    }
+  }
+  .day {
+    border-radius: 3px;
+    margin: auto;
+    padding: 0 4px;
+  }
+  @media (min-width: 700px) {
+    .day {
+        margin: unset;
+        padding: unset;
+        border-radius: 6px;
+        min-height: 50px;
+    }
+  }
+  
+  .day-header {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+  @media (min-width: 700px) {
+    .day-header {
+        background: rgb(234, 230, 240);
+        padding: 0 10px;
+    }
+  }
+  .day-number {
+    font-weight: 500;
+  }
+  @media (min-width: 700px) {
+    .day-number {
+        font-weight: bold;
+      }
+  }
+  .event {
+    font-size: 0.8em;
+    line-height: 1.25em;
+    /* background-color: #d0eaff; */
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+
+  /* Highlight event days */
+  .event-day.theme1 {
+    background-color: var(--dark-purple);
+    border: 1px solid var(--dark-gray);
+    color: white;
+  }
+  @media (min-width: 700px) {
+    .event-day.theme1 {
+        color: var(--dark-gray);
+        background-color: var(--butter-yellow);
+        border-width: 2px;
+    }
+  }
+  .event-day.theme2 {
+    background-color: var(--lilac);
+    border: 1px solid var(--dark-gray);
+  }
+  @media (min-width: 700px) {
+    .event-day.theme2 {
+        color: var(--dark-gray);
+        background-color: var(--butter-yellow);
+        border-width: 2px;
+    }
+  }
+  .event-day.theme3 {
+    background-color: var(--light-pink);
+    border: 1px solid var(--dark-gray);
+  }
+  @media (min-width: 700px) {
+    .event-day.theme3 {
+        color: var(--dark-gray);
+        background-color: var(--butter-yellow);
+        border-width: 2px;
+    }
+  }
+
+  .desktop-events {
+    display: block;
+  }
+  .calendar-separator {
+    margin: 0 20px;
+    border-top: 1px solid var(--dark-gray);
+  }
+  @media (min-width: 700px) {
+    .calendar-separator {
+        display: none;
+      }
+  }
+  .events-summary {
+    text-align: left;
+    padding: 20px;
+  }
+  .event-item {
+    margin-bottom: 8px;
+  }
+  .event-day-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  @media (max-width: 699px) {
+    .desktop-events {
+      display: none;
+    }
+    .events-summary {
+      display: block;
+    }
+  }
+  @media (min-width: 700px) {
+    .events-summary {
+      display: none;
+    }
+  }
+
+  /* end schedule */
