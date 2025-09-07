@@ -74,6 +74,9 @@ main {
     justify-content: center;
     display: flex;
 }
+main.planning {
+    padding: 0;
+}
 p {
     margin: 0;
 }
@@ -117,7 +120,7 @@ p {
 .browser-windows {
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 100%;
 }
 @media (min-width: 700px) {
     .browser-windows {
