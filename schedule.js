@@ -1,24 +1,74 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const calendar1 = {
+    const calendars = [
+      {
         monthName: "septembre",
         yearName: "2025",
-        startDay: 0, // 0 = monday
+        startDay: 0,
         totalDays: 30,
         events: {
-          15: { color: "theme1", items: ["Session Libre @ La Cité Bleue"] },
-          22: { color: "theme1", items: ["Session Libre @ La Cité Bleue"] },
-          26: { color: "theme2", items: ["Assemblée générale"] },
-          29: { color: "theme1", items: ["Session Libre @ La Cité Bleue"] }
+          15: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+          22: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+          26: { color: "theme3", items: ["Assemblée générale @ Caserne B, 18h30"] },
+          29: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] }
         }
-      };
-      // 26: { color: "red", items: ["Session Libre", "Balade"] },
+      },
+      {
+        monthName: "octobre",
+        yearName: "2025",
+        startDay: 2,
+        totalDays: 31,
+        events: {
+            3: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            6: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            10: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            13: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            17: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            31: { color: "theme31", items: ["Rollerween @ La Garage Moderne, 18h"] }
+        }
+      },
+      {
+        monthName: "novembre",
+        yearName: "2025",
+        startDay: 5,
+        totalDays: 30,
+        events: {
+            3: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            7: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            10: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            14: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            16: { color: "theme3", items: ["Initiation Rollerdance @ TBD"] },
+            17: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            21: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            24: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            28: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+        }
+      },
+      {
+        monthName: "decembre",
+        yearName: "2025",
+        startDay: 0,
+        totalDays: 31,
+        events: {
+            1: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            5: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            8: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            12: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            15: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            19: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+        }
+      }
+    ];
+  
+    let currentMonthIndex = 0;
   
     const calendarEl = document.getElementById('calendar');
     const monthTitleEl = document.getElementById('month-title');
     const eventsSummaryEl = document.getElementById('events-summary');
+    const prevBtn = document.getElementById('prev-month');
+    const nextBtn = document.getElementById('next-month');
   
-    function renderCalendar(calendar1) {
-      const { monthName, yearName, startDay, totalDays, events } = calendar1;
+    function renderCalendar(calendar) {
+      const { monthName, yearName, startDay, totalDays, events } = calendar;
   
       monthTitleEl.textContent = monthName + " " + yearName;
       calendarEl.innerHTML = "";
@@ -26,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       const daysOfWeek = ["lun", "mar", "mer", "jeu", "ven", "sam", "dim"];
   
-      // Render headers
+      // Headers
       daysOfWeek.forEach(day => {
         const header = document.createElement('div');
         header.className = 'day-header';
@@ -41,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         calendarEl.appendChild(empty);
       }
   
-      // Render days
+      // Days
       for (let day = 1; day <= totalDays; day++) {
         const dayEl = document.createElement('div');
         dayEl.className = 'day';
@@ -55,7 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
           const eventData = events[day];
           dayEl.classList.add("event-day", eventData.color);
   
-          // Render inside calendar (desktop only)
           const insideEvents = document.createElement('div');
           insideEvents.className = 'desktop-events';
           eventData.items.forEach(item => {
@@ -70,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
         calendarEl.appendChild(dayEl);
       }
   
-      // Render below-calendar event list (mobile only)
+      // Event summary below calendar
       for (const [day, eventData] of Object.entries(events)) {
         const dayNum = parseInt(day);
         const container = document.createElement('div');
@@ -87,8 +136,35 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(eventText);
         eventsSummaryEl.appendChild(container);
       }
+  
+      // Hide/show navigation buttons
+      if (currentMonthIndex === 0) {
+        prevBtn.classList.add("hidden");
+      } else {
+        prevBtn.classList.remove("hidden");
+      }
+  
+      if (currentMonthIndex === calendars.length - 1) {
+        nextBtn.classList.add("hidden");
+      } else {
+        nextBtn.classList.remove("hidden");
+      }
     }
   
-    renderCalendar(calendar1);
-  });
+    prevBtn.addEventListener("click", () => {
+      if (currentMonthIndex > 0) {
+        currentMonthIndex--;
+        renderCalendar(calendars[currentMonthIndex]);
+      }
+    });
   
+    nextBtn.addEventListener("click", () => {
+      if (currentMonthIndex < calendars.length - 1) {
+        currentMonthIndex++;
+        renderCalendar(calendars[currentMonthIndex]);
+      }
+    });
+  
+    // Initial render
+    renderCalendar(calendars[currentMonthIndex]);
+  });
