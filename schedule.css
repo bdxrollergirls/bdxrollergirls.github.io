@@ -137,7 +137,7 @@ display: none;
     border: 1px solid var(--dark-gray);
   }
   @media (min-width: 700px) {
-    .event-day.theme3 {
+    .event-day.theme31 {
         color: var(--dark-gray);
         background-color: var(--bright-orange);
         border-width: 2px;
