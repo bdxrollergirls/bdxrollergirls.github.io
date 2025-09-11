@@ -232,5 +232,5 @@ display: none;
   /* Hover effect */
   #prev-month:hover::before,
   #next-month:hover::before {
-    border-color: var(--bright-purple);
+    border-color: var(--middle-gray);
   }
