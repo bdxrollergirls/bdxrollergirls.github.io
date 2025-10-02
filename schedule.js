@@ -1,29 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
     const calendars = [
-      {
-        monthName: "septembre",
-        yearName: "2025",
-        startDay: 0,
-        totalDays: 30,
-        events: {
-          15: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-          22: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-          26: { color: "theme3", items: ["Assemblée générale @ Caserne B, 18h30"] },
-          29: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] }
-        }
-      },
+    //   {
+    //     monthName: "septembre",
+    //     yearName: "2025",
+    //     startDay: 0,
+    //     totalDays: 30,
+    //     events: {
+    //       15: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+    //       22: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+    //       26: { color: "theme3", items: ["Assemblée générale @ Caserne B, 18h30"] },
+    //       29: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] }
+    //     }
+    //   },
       {
         monthName: "octobre",
         yearName: "2025",
         startDay: 2,
         totalDays: 31,
         events: {
-            3: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            3: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             6: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            10: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            10: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             13: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            17: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
-            31: { color: "theme31", items: ["Rollerween @ La Garage Moderne, 18h"] }
+            17: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            31: { color: "theme31", items: ["Rollerween Party @ Le Garage Moderne, 18h-00h"] }
         }
       },
       {
@@ -33,14 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
         totalDays: 30,
         events: {
             3: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            7: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            7: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             10: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            14: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            14: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             16: { color: "theme3", items: ["Initiation Rollerdance @ TBD"] },
             17: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            21: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            21: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             24: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            28: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            28: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
         }
       },
       {
@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
         totalDays: 31,
         events: {
             1: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            5: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            5: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             8: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            12: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            12: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             15: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            19: { color: "theme2", items: ["Skatepark @ L'Estacade, 18h30"] },
+            19: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
         }
       }
     ];

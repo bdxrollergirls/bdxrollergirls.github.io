@@ -1,5 +1,9 @@
 :root {
-    --lilac: #A6B6E5;
+    --lilac200: #DBE2F5;
+    --lilac300: #C1CCED;
+    --lilac500: #A6B6E5;
+    --lilac600: #9BA9D3;
+    --lilac-light: #DBE2F5;
     --dark-purple: #423B7F;
     --light-pink: #EDCEE4;
     --light-gray: #B6BFC4;
@@ -10,21 +14,23 @@
     --lime-green: #E5F20D;
     --bright-orange: #F59C03;
 }
+
+
+
 body {
     font-family: "Poppins", sans-serif;
-    background-color: var(--lilac);
+    background-color: var(--lilac500);
     margin: 0;
     padding: 0;
     font-size: 16px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--lilac);
+    background-color: var(--lilac500);
     background-image: linear-gradient(to right, rgba(255,255,255,0.25) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.25) 1px, transparent 1px);
     background-size: 25px 25px; 
 }
 header {
-    background-color: var(-lilac);
     font-family: "Funnel Display", sans-serif;
     color: white;
     padding: 1em;
@@ -37,6 +43,16 @@ h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-family: "Bai Jamjuree", sans-serif;
+}
+.title-1 {
+    font-size:  2.5rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+.title-2-secondary {
+    color: white;
+    text-shadow: 1px 1px 0 var(--dark-purple), 1px -1px 0 var(--dark-purple), -1px 1px 0 var(--dark-purple), -2px -2px 0 var(--dark-purple), 1px 0px 0 var(--dark-purple), 0px 1px 0 var(--dark-purple), -1px 0px 0 var(--dark-purple), 0px -1px 0 var(--dark-purple);
 }
 nav {
     display: flex;
@@ -52,7 +68,7 @@ nav ul {
     justify-content: center;
 }
 nav ul li .link {
-    background-color: var(--lilac);
+    background-color: var(--lilac500);
     padding: 4px 8px;
     border-radius: 50px;
     border: 2px solid var(--dark-gray);
@@ -87,7 +103,7 @@ p {
 .level1 {
     font-family: "Funnel Display", sans-serif;
     color: var(--dark-purple);
-    font-size: 2.25rem;
+    font-size: 2.15rem;
     margin-bottom: 25px;
 }
 .level2{
@@ -142,7 +158,32 @@ p {
     margin: auto;
     transform: translateY(-55px);
 }
-.browser-top {
+.cta-1 {
+    padding: 12px 24px;
+    border-radius: 50px;
+    background: white;
+    border: 2px solid var(--dark-purple);
+    box-shadow: 6px 6px 0px 0px var(--dark-purple);
+    text-decoration: none;
+    text-shadow: none;
+    color: var(--dark-purple);
+    font-family: "Funnel Display", sans-serif;
+}
+.cta-2 {
+    padding: 4px 15px;
+    border-radius: 50px;
+    border: 2px solid var(--dark-gray);
+    box-shadow: 6px 6px 0px 0px var(--dark-gray);
+    text-decoration: none;
+    text-shadow: none;
+    color: var(--dark-gray);
+    background-color: var(--lilac200);
+}
+.cta-2:hover {
+    box-shadow: 9px 9px 0px 0px var(--dark-gray);
+    background-color: white;
+}
+.browser .browser-top {
     width: 100%;
     height: 50px;
     background: var(--dark-purple);
@@ -153,13 +194,13 @@ p {
     gap: 7px;
     padding-left: 15px;
 }
-.circle {
+.browser .browser-top .circle {
     background: #FFF5E2;
     border-radius: 50%;
     height: 18px;
     width: 18px;
 }
-.browser-bottom {
+.browser .browser-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,5 +231,24 @@ footer a{
     color: white;
 }
 footer a:hover{
-    color: var(--lilac);
+    color: var(--lilac500);
+}
+.planning-more-info {
+    padding: 0px 20px 75px 20px;
+}
+.planning-more-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+}
+.planning-more-info ul li {
+    margin-bottom: 6px;
+}
+.page {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1300px;
 }
