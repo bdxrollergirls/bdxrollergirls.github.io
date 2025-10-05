@@ -63,14 +63,9 @@ img.picto{
 .second-row .left img {
     max-width: min(400px, 70vw);
     margin: auto;
-    transform: translateX(25px);
+    margin-top: 15px;
     position: sticky;
     top: 0;
-}
-@media (min-width: 700px) {
-    .second-row .left img {
-        transform: translateX(0px);
-    }
 }
 .second-row .right {
     display: flex;

@@ -89,6 +89,9 @@
         font-weight: bold;
     }
 }
+.vacation-day {
+    background-color: #E0D8C8; 
+  }
 .event {
     font-size: 0.8em;
     line-height: 1.25em;
@@ -98,6 +101,17 @@
 }
 
 /* Highlight event days */
+.event-day.theme0 {
+    background-color: #D6CEBF;
+    border: 1px solid var(--dark-gray);
+}
+@media (min-width: 700px) {
+    .event-day.theme0 {
+        color: var(--dark-gray);
+        background-color: #D6CEBF;
+        border-width: 2px;
+    }
+}
 .event-day.theme1 {
     background-color: var(--dark-purple);
     border: 1px solid var(--dark-gray);

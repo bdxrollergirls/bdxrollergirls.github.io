@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             10: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             13: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
             17: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            18: { color: "theme0", items: ["Début des vacances de la Toussaint"] },
             31: { color: "theme31", items: ["Rollerween Party @ Le Garage Moderne, 18h-00h"] }
         }
       },
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         startDay: 5,
         totalDays: 30,
         events: {
+            2: { color: "theme0", items: ["Fin des vacances de la Toussaint"] },
             3: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
             7: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             10: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       },
       {
-        monthName: "decembre",
+        monthName: "décembre",
         yearName: "2025",
         startDay: 0,
         totalDays: 31,
@@ -55,9 +57,53 @@ document.addEventListener("DOMContentLoaded", () => {
             12: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             15: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
             19: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            19: { color: "theme0", items: ["Début des vacances de Noël"] },
         }
       }
     ];
+    const vacationRanges = [
+        { start: { month: "octobre", day: 18 }, end: { month: "novembre", day: 2 } },
+        { start: { month: "décembre", day: 20 }, end: { month: "janvier", day: 4 } },
+        // { start: { month: "février", day: 7 }, end: { month: "février", day: 22 } },
+        // { start: { month: "avril", day: 4 }, end: { month: "avril", day: 19 } },
+        // { start: { month: "juillet", day: 4 }, end: { month: "septembre", day: 1 } },
+    ];
+
+
+
+    function isVacationDay(calendar, day, vacationRanges) {
+        return vacationRanges.some(range => {
+          const currentMonth = calendar.monthName;
+          const currentYear = calendar.yearName;
+      
+          // Case 1: Start and end in the same month
+          if (range.start.month === range.end.month && currentMonth === range.start.month) {
+            return day >= range.start.day && day <= range.end.day;
+          }
+      
+          // Case 2: Current month = start month
+          if (currentMonth === range.start.month && day >= range.start.day) {
+            return true;
+          }
+      
+          // Case 3: Current month = end month
+          if (currentMonth === range.end.month && day <= range.end.day) {
+            return true;
+          }
+      
+          // Case 4: Current month between start and end (multi-month ranges)
+          const monthNames = calendars.map(c => c.monthName);
+          const startIndex = monthNames.indexOf(range.start.month);
+          const endIndex = monthNames.indexOf(range.end.month);
+          const currentIndex = monthNames.indexOf(currentMonth);
+      
+          if (currentIndex > startIndex && currentIndex < endIndex) {
+            return true;
+          }
+      
+          return false;
+        });
+      }
   
     let currentMonthIndex = 0;
   
@@ -115,6 +161,13 @@ document.addEventListener("DOMContentLoaded", () => {
           });
           dayEl.appendChild(insideEvents);
         }
+
+        // Vacation highlighting (only if not an event day)
+        if (!events[day] && isVacationDay(calendar, day, vacationRanges)) {
+            dayEl.classList.add("vacation-day");
+        }
+
+
   
         calendarEl.appendChild(dayEl);
       }
