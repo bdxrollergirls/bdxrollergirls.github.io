@@ -1,0 +1,20 @@
+main h1 {
+    color: var(--dark-purple);
+    margin: auto;
+}
+h2{
+    color: var(--dark-purple);
+    text-align: left;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+p {
+    text-align: left;
+    color: var(--dark-purple);
+}
+.browser{
+    width: 800px;
+}
+.browser .browser-bottom {
+    align-items: start;
+}
