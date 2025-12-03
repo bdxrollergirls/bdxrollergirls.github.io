@@ -1,0 +1,39 @@
+.resources {
+    max-width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 24px;
+}
+
+.resource {
+    aspect-ratio: 1 / 1; /* makes each item a perfect square */
+    /* background: hotpink; */
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background: limegreen;
+    border: var(--dark-gray) 2px solid;
+}
+
+.box-link {
+    position: relative;
+    display: block;
+    border: var(--dark-gray) 2px solid;
+    border-radius: 6px;
+    background: var(--lime-green);
+    color: var(--dark-gray);
+    top: -20px;
+    padding: 12px 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.box-link:hover{
+    box-shadow: 5px 5px 0 0 var(--dark-gray);
+    background: var(--butter-yellow);
+    top: -22px;
+    left: -2px;
+}
