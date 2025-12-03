@@ -27,24 +27,24 @@ document.addEventListener("DOMContentLoaded", () => {
     //         31: { color: "theme31", items: ["Rollerween Party @ Le Garage Moderne, 18h-00h"] }
     //     }
     //   },
-      {
-        monthName: "novembre",
-        yearName: "2025",
-        startDay: 5,
-        totalDays: 30,
-        events: {
-            2: { color: "theme0", items: ["Fin des vacances de la Toussaint"] },
-            3: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            7: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            10: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            14: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            16: { color: "theme3", items: ["Initiation Rollerdance @ TBD"] },
-            17: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            21: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            24: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            28: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-        }
-      },
+    //   {
+    //     monthName: "novembre",
+    //     yearName: "2025",
+    //     startDay: 5,
+    //     totalDays: 30,
+    //     events: {
+    //         2: { color: "theme0", items: ["Fin des vacances de la Toussaint"] },
+    //         3: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+    //         7: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+    //         10: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+    //         14: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+    //         16: { color: "theme3", items: ["Initiation Rollerdance @ TBD"] },
+    //         17: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+    //         21: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+    //         24: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+    //         28: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+    //     }
+    //   },
       {
         monthName: "décembre",
         yearName: "2025",
