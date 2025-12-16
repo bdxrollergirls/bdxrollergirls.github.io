@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             12: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             15: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
             19: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            19: { color: "theme0", items: ["Début des vacances de Noël"] },
+            20: { color: "theme0", items: ["Début des vacances de Noël"] },
         }
       }
       ,
