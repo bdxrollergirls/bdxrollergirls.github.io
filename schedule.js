@@ -45,22 +45,22 @@ document.addEventListener("DOMContentLoaded", () => {
     //         28: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
     //     }
     //   },
-      {
-        monthName: "décembre",
-        yearName: "2025",
-        startDay: 0,
-        totalDays: 31,
-        events: {
-            1: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            5: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            8: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            12: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            15: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
-            19: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            20: { color: "theme0", items: ["Début des vacances de Noël"] },
-        }
-      }
-      ,
+      // {
+      //   monthName: "décembre",
+      //   yearName: "2025",
+      //   startDay: 0,
+      //   totalDays: 31,
+      //   events: {
+      //       1: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+      //       5: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       8: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+      //       12: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       15: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+      //       19: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       20: { color: "theme0", items: ["Début des vacances de Noël"] },
+      //   }
+      // }
+      // ,
       {
         monthName: "janvier",
         yearName: "2026",
@@ -68,13 +68,44 @@ document.addEventListener("DOMContentLoaded", () => {
         totalDays: 31,
         events: {
             4: { color: "theme0", items: ["Fin des vacances de Noël"] },
-            5: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            5: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
             9: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            12: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            12: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
             16: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            19: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            19: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
             23: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            26: { color: "theme1", items: ["Session Libre @ La Cité Bleue, 19h30"] },
+            26: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            30: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+        }
+      },
+      {
+        monthName: "février",
+        yearName: "2026",
+        startDay: 6,
+        totalDays: 28,
+        events: {
+            2: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            6: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            7: { color: "theme0", items: ["Fin des vacances d'hiver"] },
+            22: { color: "theme0", items: ["Début des vacances d'hiver'"] },
+            23: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] }
+        }
+      },
+      {
+        monthName: "mars",
+        yearName: "2026",
+        startDay: 6,
+        totalDays: 28,
+        events: {
+            2: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            6: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            9: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            13: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            16: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            20: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            23: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             30: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
         }
       }
@@ -82,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const vacationRanges = [
         // { start: { month: "octobre", day: 18 }, end: { month: "novembre", day: 2 } },
         { start: { month: "décembre", day: 20 }, end: { month: "janvier", day: 4 } },
-        // { start: { month: "février", day: 7 }, end: { month: "février", day: 22 } },
+        { start: { month: "février", day: 7 }, end: { month: "février", day: 22 } },
         // { start: { month: "avril", day: 4 }, end: { month: "avril", day: 19 } },
         // { start: { month: "juillet", day: 4 }, end: { month: "septembre", day: 1 } },
     ];

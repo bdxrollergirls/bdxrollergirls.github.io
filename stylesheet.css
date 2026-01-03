@@ -68,7 +68,7 @@ nav ul {
     justify-content: center;
 }
 nav ul li .link {
-    background-color: var(--lilac500);
+    background-color: var(--lilac200);
     padding: 4px 8px;
     border-radius: 50px;
     border: 2px solid var(--dark-gray);
