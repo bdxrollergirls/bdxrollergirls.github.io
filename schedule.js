@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
         events: {
             2: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
             6: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            7: { color: "theme0", items: ["Fin des vacances d'hiver"] },
-            22: { color: "theme0", items: ["Début des vacances d'hiver'"] },
+            7: { color: "theme0", items: ["Début des vacances d'hiver"] },
+            22: { color: "theme0", items: ["Fin des vacances d'hiver'"] },
             23: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
             27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] }
         }
