@@ -61,23 +61,23 @@ document.addEventListener("DOMContentLoaded", () => {
       //   }
       // }
       // ,
-      {
-        monthName: "janvier",
-        yearName: "2026",
-        startDay: 3,
-        totalDays: 31,
-        events: {
-            4: { color: "theme0", items: ["Fin des vacances de Noël"] },
-            5: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            9: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            12: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            16: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            19: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            23: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            26: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            30: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-        }
-      },
+      // {
+      //   monthName: "janvier",
+      //   yearName: "2026",
+      //   startDay: 3,
+      //   totalDays: 31,
+      //   events: {
+      //       4: { color: "theme0", items: ["Fin des vacances de Noël"] },
+      //       5: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       9: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       12: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       16: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       19: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       23: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       26: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       30: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //   }
+      // },
       {
         monthName: "février",
         yearName: "2026",
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         monthName: "mars",
         yearName: "2026",
         startDay: 6,
-        totalDays: 28,
+        totalDays: 31,
         events: {
             2: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
             6: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
@@ -108,13 +108,27 @@ document.addEventListener("DOMContentLoaded", () => {
             27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             30: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
         }
+      },
+      {
+        monthName: "avril",
+        yearName: "2026",
+        startDay: 2,
+        totalDays: 30,
+        events: {
+            3: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            4: { color: "theme0", items: ["Début des vacances d'hiver"] },
+            19: { color: "theme0", items: ["Fin des vacances d'hiver'"] },
+            20: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            24: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            27: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+        }
       }
     ];
     const vacationRanges = [
         // { start: { month: "octobre", day: 18 }, end: { month: "novembre", day: 2 } },
         { start: { month: "décembre", day: 20 }, end: { month: "janvier", day: 4 } },
         { start: { month: "février", day: 7 }, end: { month: "février", day: 22 } },
-        // { start: { month: "avril", day: 4 }, end: { month: "avril", day: 19 } },
+        { start: { month: "avril", day: 4 }, end: { month: "avril", day: 19 } },
         // { start: { month: "juillet", day: 4 }, end: { month: "septembre", day: 1 } },
     ];
 
