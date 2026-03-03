@@ -78,20 +78,20 @@ document.addEventListener("DOMContentLoaded", () => {
       //       30: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
       //   }
       // },
-      {
-        monthName: "février",
-        yearName: "2026",
-        startDay: 6,
-        totalDays: 28,
-        events: {
-            2: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            6: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            7: { color: "theme0", items: ["Début des vacances d'hiver"] },
-            22: { color: "theme0", items: ["Fin des vacances d'hiver'"] },
-            23: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] }
-        }
-      },
+      // {
+      //   monthName: "février",
+      //   yearName: "2026",
+      //   startDay: 6,
+      //   totalDays: 28,
+      //   events: {
+      //       2: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       6: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       7: { color: "theme0", items: ["Début des vacances d'hiver"] },
+      //       22: { color: "theme0", items: ["Fin des vacances d'hiver'"] },
+      //       23: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] }
+      //   }
+      // },
       {
         monthName: "mars",
         yearName: "2026",
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
             20: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             23: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
             27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            30: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            30: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
         }
       },
       {
