@@ -130,6 +130,9 @@ document.addEventListener("DOMContentLoaded", () => {
         totalDays: 31,
         events: {
             4: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            8: { color: "theme3", items: ["Roller Trip Prague"] },
+            9: { color: "theme3", items: ["Roller Trip Prague"] },
+            10: { color: "theme3", items: ["Roller Trip Prague"] },
             11: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
             15: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
             18: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },

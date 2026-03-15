@@ -142,7 +142,7 @@
 @media (min-width: 700px) {
     .event-day.theme3 {
         color: var(--dark-gray);
-        background-color: var(--butter-yellow);
+        /* background-color: var(--butter-yellow); */
         border-width: 2px;
     }
 }
