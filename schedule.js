@@ -103,9 +103,9 @@ document.addEventListener("DOMContentLoaded", () => {
             9: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
             13: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             16: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            20: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            // 20: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             23: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            // 27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             30: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
         }
       },
@@ -115,11 +115,11 @@ document.addEventListener("DOMContentLoaded", () => {
         startDay: 2,
         totalDays: 30,
         events: {
-            3: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            // 3: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             4: { color: "theme0", items: ["Début des vacances d'hiver"] },
             19: { color: "theme0", items: ["Fin des vacances d'hiver'"] },
             20: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            24: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+            // 24: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             27: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
         }
       }
