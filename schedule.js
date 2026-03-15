@@ -122,7 +122,21 @@ document.addEventListener("DOMContentLoaded", () => {
             // 24: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
             27: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
         }
-      }
+      },
+      {
+        monthName: "mai",
+        yearName: "2026",
+        startDay: 4,
+        totalDays: 31,
+        events: {
+            4: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            11: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            15: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+            18: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            22: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+            29: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+        }
+      },
     ];
     const vacationRanges = [
         // { start: { month: "octobre", day: 18 }, end: { month: "novembre", day: 2 } },
