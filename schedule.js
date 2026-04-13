@@ -92,23 +92,23 @@ document.addEventListener("DOMContentLoaded", () => {
       //       27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] }
       //   }
       // },
-      {
-        monthName: "mars",
-        yearName: "2026",
-        startDay: 6,
-        totalDays: 31,
-        events: {
-            2: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            6: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            9: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            13: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            16: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            // 20: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            23: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            // 27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            30: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-        }
-      },
+      // {
+      //   monthName: "mars",
+      //   yearName: "2026",
+      //   startDay: 6,
+      //   totalDays: 31,
+      //   events: {
+      //       2: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       6: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       9: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       13: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       16: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       // 20: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       23: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       // 27: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       30: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //   }
+      // },
       {
         monthName: "avril",
         yearName: "2026",
