@@ -140,12 +140,49 @@ document.addEventListener("DOMContentLoaded", () => {
             29: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
         }
       },
+      {
+        monthName: "juin",
+        yearName: "2026",
+        startDay: 0,
+        totalDays: 30,
+        events: {
+            1: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            5: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+            8: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            12: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+            15: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            19: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+            22: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+            26: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+            29: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+        }
+      },
+      {
+        monthName: "juillet",
+        yearName: "2026",
+        startDay: 2,
+        totalDays: 31,
+        events: {
+            3: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+            4: { color: "theme0", items: ["Début des vacances d'été"] },
+        }
+      },
+      {
+        monthName: "août",
+        yearName: "2026",
+        startDay: 5,
+        totalDays: 31,
+        events: {
+            31: { color: "theme0", items: ["Fin des vacances d'été"] },
+        }
+      },
     ];
     const vacationRanges = [
         // { start: { month: "octobre", day: 18 }, end: { month: "novembre", day: 2 } },
         { start: { month: "décembre", day: 20 }, end: { month: "janvier", day: 4 } },
         { start: { month: "février", day: 7 }, end: { month: "février", day: 22 } },
         { start: { month: "avril", day: 4 }, end: { month: "avril", day: 19 } },
+        { start: { month: "juillet", day: 4 }, end: { month: "août", day: 31 } },
         // { start: { month: "juillet", day: 4 }, end: { month: "septembre", day: 1 } },
     ];
 
