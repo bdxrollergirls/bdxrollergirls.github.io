@@ -147,13 +147,8 @@ document.addEventListener("DOMContentLoaded", () => {
         totalDays: 30,
         events: {
             1: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            5: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
-            8: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            12: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
             15: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            19: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
             22: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            26: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
             29: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
         }
       },
@@ -163,7 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
         startDay: 2,
         totalDays: 31,
         events: {
-            3: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
             4: { color: "theme0", items: ["Début des vacances d'été"] },
         }
       },
