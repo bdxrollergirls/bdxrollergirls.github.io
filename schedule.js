@@ -109,20 +109,20 @@ document.addEventListener("DOMContentLoaded", () => {
       //       30: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
       //   }
       // },
-      {
-        monthName: "avril",
-        yearName: "2026",
-        startDay: 2,
-        totalDays: 30,
-        events: {
-            // 3: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            4: { color: "theme0", items: ["Début des vacances de printemps"] },
-            19: { color: "theme0", items: ["Fin des vacances de printemps'"] },
-            20: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            // 24: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
-            27: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-        }
-      },
+      // {
+      //   monthName: "avril",
+      //   yearName: "2026",
+      //   startDay: 2,
+      //   totalDays: 30,
+      //   events: {
+      //       // 3: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       4: { color: "theme0", items: ["Début des vacances de printemps"] },
+      //       19: { color: "theme0", items: ["Fin des vacances de printemps'"] },
+      //       20: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       // 24: { color: "theme2", items: ["Session Street @ La Maison Ecocitoyenne, 18h30"] },
+      //       27: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //   }
+      // },
       {
         monthName: "mai",
         yearName: "2026",
