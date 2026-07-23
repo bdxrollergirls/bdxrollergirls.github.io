@@ -123,35 +123,35 @@ document.addEventListener("DOMContentLoaded", () => {
       //       27: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
       //   }
       // },
-      {
-        monthName: "mai",
-        yearName: "2026",
-        startDay: 4,
-        totalDays: 31,
-        events: {
-            4: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            8: { color: "theme3", items: ["Roller Trip Prague"] },
-            9: { color: "theme3", items: ["Roller Trip Prague"] },
-            10: { color: "theme3", items: ["Roller Trip Prague"] },
-            11: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            15: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
-            18: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            22: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
-            29: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
-        }
-      },
-      {
-        monthName: "juin",
-        yearName: "2026",
-        startDay: 0,
-        totalDays: 30,
-        events: {
-            1: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            15: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            22: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-            29: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
-        }
-      },
+      // {
+      //   monthName: "mai",
+      //   yearName: "2026",
+      //   startDay: 4,
+      //   totalDays: 31,
+      //   events: {
+      //       4: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       8: { color: "theme3", items: ["Roller Trip Prague"] },
+      //       9: { color: "theme3", items: ["Roller Trip Prague"] },
+      //       10: { color: "theme3", items: ["Roller Trip Prague"] },
+      //       11: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       15: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+      //       18: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       22: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+      //       29: { color: "theme2", items: ["Session Street @ L'estacade (Cenon), 18h30"] },
+      //   }
+      // },
+      // {
+      //   monthName: "juin",
+      //   yearName: "2026",
+      //   startDay: 0,
+      //   totalDays: 30,
+      //   events: {
+      //       1: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       15: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       22: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //       29: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
+      //   }
+      // },
       {
         monthName: "juillet",
         yearName: "2026",
