@@ -1,0 +1,11 @@
+/* main.about {
+    flex-direction: column;
+}
+
+.planning-more-info{
+    display:block;
+} */
+
+.page {
+    display: flow-root;
+}

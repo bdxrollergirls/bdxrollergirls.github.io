@@ -1,5 +1,6 @@
 .browser.browser-calendar {
     margin-top: 40px;
+    background: var(--white100);
 }
 @media (min-width: 700px) {
     .browser.browser-calendar {
@@ -18,13 +19,13 @@
 
 .browser-calendar h2#month-title{
     margin: 0 auto;
-    background: var(--butter-yellow);
+    background: var(--green100);
     border-radius: 50px;
     width: max-content;
     padding: 0 15px;
-    border: 2px solid var(--dark-gray);
-    box-shadow: 4px 4px 0px 0px var(--dark-gray);
-    color: var(--dark-gray);
+    border: 2px solid var(--black900);
+    box-shadow: 4px 4px 0px 0px var(--black900);
+    color: var(--black900);
 }
 .calendar {
     display: grid;
@@ -48,11 +49,11 @@
 .day-header, .day {
     font-size: 0.9em;
     line-height: auto;
-    color: var(--dark-gray);
+    color: var(--black900);
 }
 @media (min-width: 700px) {
     .day-header, .day {
-        border: 2px solid var(--dark-gray);
+        border: 2px solid var(--black900);
     }
 }
 .day {
@@ -76,7 +77,7 @@
 }
 @media (min-width: 700px) {
     .day-header {
-        background: rgb(234, 230, 240);
+        background: var(--green200);
         padding: 0 10px;
     }
 }
@@ -90,7 +91,7 @@
     }
 }
 .vacation-day {
-    background-color: #E0D8C8; 
+    background-color: var(--green100); 
   }
 .event {
     font-size: 0.8em;
@@ -102,57 +103,57 @@
 
 /* Highlight event days */
 .event-day.theme0 {
-    background-color: #D6CEBF;
-    border: 1px solid var(--dark-gray);
+    background-color: var(--green100);
+    border: 1px solid var(--black900);
 }
 @media (min-width: 700px) {
     .event-day.theme0 {
-        color: var(--dark-gray);
-        background-color: #D6CEBF;
+        color: var(--black900);
+        background-color: var(--green100);
         border-width: 2px;
     }
 }
 .event-day.theme1 {
-    background-color: var(--dark-purple);
-    border: 1px solid var(--dark-gray);
+    background-color: var(--green700);
+    border: 1px solid var(--black900);
     color: white;
 }
 @media (min-width: 700px) {
     .event-day.theme1 {
-        color: var(--dark-gray);
-        background-color: var(--butter-yellow);
+        color: var(--black900);
+        background-color: var(--green100);
         border-width: 2px;
     }
 }
 .event-day.theme2 {
-    background-color: var(--lilac500);
-    border: 1px solid var(--dark-gray);
+    background-color: var(--green500);
+    border: 1px solid var(--black900);
 }
 @media (min-width: 700px) {
     .event-day.theme2 {
-        color: var(--dark-gray);
-        background-color: var(--butter-yellow);
+        color: var(--black900);
+        background-color: var(--green100);
         border-width: 2px;
     }
 }
 .event-day.theme3 {
     background-color: var(--lime-green);
-    border: 1px solid var(--dark-gray);
+    border: 1px solid var(--black900);
 }
 @media (min-width: 700px) {
     .event-day.theme3 {
-        color: var(--dark-gray);
+        color: var(--black900);
         /* background-color: var(--butter-yellow); */
         border-width: 2px;
     }
 }
 .event-day.theme31 {
     background-color: var(--bright-orange);
-    border: 1px solid var(--dark-gray);
+    border: 1px solid var(--black900);
 }
 @media (min-width: 700px) {
     .event-day.theme31 {
-        color: var(--dark-gray);
+        color: var(--black900);
         background-color: var(--bright-orange);
         border-width: 2px;
     }
@@ -163,7 +164,7 @@
 }
 .calendar-separator {
     margin: 0 20px;
-    border-top: 1px solid var(--dark-gray);
+    border-top: 1px solid var(--black900);
 }
 @media (min-width: 700px) {
     .calendar-separator {
@@ -233,8 +234,8 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    border-top: 3px solid var(--dark-gray);
-    border-right: 3px solid var(--dark-gray);
+    border-top: 3px solid var(--black900);
+    border-right: 3px solid var(--black900);
     transform: rotate(45deg);
     position: absolute;
     top: 50%;

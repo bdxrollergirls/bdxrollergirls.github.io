@@ -152,15 +152,15 @@ document.addEventListener("DOMContentLoaded", () => {
       //       29: { color: "theme1", items: ["Session Libre @ Le Garage Moderne, 19h30"] },
       //   }
       // },
-      {
-        monthName: "juillet",
-        yearName: "2026",
-        startDay: 2,
-        totalDays: 31,
-        events: {
-            4: { color: "theme0", items: ["Début des vacances d'été"] },
-        }
-      },
+      // {
+      //   monthName: "juillet",
+      //   yearName: "2026",
+      //   startDay: 2,
+      //   totalDays: 31,
+      //   events: {
+      //       4: { color: "theme0", items: ["Début des vacances d'été"] },
+      //   }
+      // },
       {
         monthName: "août",
         yearName: "2026",
@@ -168,6 +168,15 @@ document.addEventListener("DOMContentLoaded", () => {
         totalDays: 31,
         events: {
             31: { color: "theme0", items: ["Fin des vacances d'été"] },
+        }
+      },
+      {
+        monthName: "septembre",
+        yearName: "2026",
+        startDay: 1,
+        totalDays: 30,
+        events: {
+            7: { color: "theme1", items: ["Meetup @ TBD, 19h - 20h30"] },
         }
       },
     ];

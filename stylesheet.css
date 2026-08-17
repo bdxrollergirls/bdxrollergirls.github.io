@@ -13,20 +13,30 @@
     --bright-purple: #5169CF;
     --lime-green: #E5F20D;
     --bright-orange: #F59C03;
+
+    --green100: #F2F5E7;
+    --green200: #D6DFB5;
+    --green250: #CAD0A6;
+    --green500: #62BA94;
+    --green700: #346E53;
+    --green800: #104126;
+    --black900: #000000;
+    --white100: #ffffff;
+
 }
 
 
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: var(--lilac500);
+    background-color: var(--green500);
     margin: 0;
     padding: 0;
     font-size: 16px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--lilac500);
+    background-color: var(--green500);
     background-image: linear-gradient(to right, rgba(255,255,255,0.25) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.25) 1px, transparent 1px);
     background-size: 25px 25px; 
 }
@@ -36,7 +46,7 @@ header {
     padding: 1em;
     text-align: center;
     color: #FFFFFF;
-    text-shadow: 2px 2px 0 var(--dark-purple), 2px -2px 0 var(--dark-purple), -2px 2px 0 var(--dark-purple), -2px -2px 0 var(--dark-purple), 2px 0px 0 var(--dark-purple), 0px 2px 0 var(--dark-purple), -2px 0px 0 var(--dark-purple), 0px -2px 0 var(--dark-purple);
+    text-shadow: 2px 2px 0 var(--green700), 2px -2px 0 var(--green700), -2px 2px 0 var(--green700), -2px -2px 0 var(--green700), 2px 0px 0 var(--green700), 0px 2px 0 var(--green700), -2px 0px 0 var(--green700), 0px -2px 0 var(--green700);
 }
 h1 {
     font-size:  2.5rem;
@@ -52,7 +62,7 @@ h1 {
 }
 .title-2-secondary {
     color: white;
-    text-shadow: 1px 1px 0 var(--dark-purple), 1px -1px 0 var(--dark-purple), -1px 1px 0 var(--dark-purple), -2px -2px 0 var(--dark-purple), 1px 0px 0 var(--dark-purple), 0px 1px 0 var(--dark-purple), -1px 0px 0 var(--dark-purple), 0px -1px 0 var(--dark-purple);
+    text-shadow: 1px 1px 0 var(--green700), 1px -1px 0 var(--green700), -1px 1px 0 var(--green700), -2px -2px 0 var(--green700), 1px 0px 0 var(--green700), 0px 1px 0 var(--green700), -1px 0px 0 var(--green700), 0px -1px 0 var(--green700);
 }
 nav {
     display: flex;
@@ -68,22 +78,23 @@ nav ul {
     justify-content: center;
 }
 nav ul li .link {
-    background-color: var(--lilac200);
+    background-color: var(--white100);
     padding: 4px 8px;
     border-radius: 50px;
-    border: 2px solid var(--dark-gray);
-    box-shadow: 6px 6px 0px 0px var(--dark-gray);
+    border: 2px solid var(--black900);
+    box-shadow: 6px 6px 0px 0px var(--black900);
     text-decoration: none;
     text-shadow: none;
-    color: var(--dark-purple);
+    color: var(--green800);
     font-family: "Funnel Display", sans-serif;
 }
 nav ul li .link:hover{
     background-color: white;
-    box-shadow: 9px 9px 0px 0px var(--dark-gray);
+    box-shadow: 9px 9px 0px 0px var(--black900);
 }
-nav ul li  .active_link {
-    background-color: var(--light-pink);
+nav ul li  .link.active_link {
+    background-color: var(--green200);
+    color: var(--black900);
 }
 main {
     padding: 2em;
@@ -100,18 +111,25 @@ main.planning {
 p {
     margin: 0;
 }
+a, a:visited{
+    color: var(--green800);
+}
+a:hover{
+    color: var(--black900);
+    text-decoration-thickness: 3px;
+}
 .level1 {
     font-family: "Funnel Display", sans-serif;
-    color: var(--dark-purple);
+    color: var(--green700);
     font-size: 2.15rem;
     margin-bottom: 25px;
 }
 .level2{
-    color: var(--dark-purple);
+    color: var(--green700);
     font-size: 1.25rem;
 }
 .level3{
-    color: var(--dark-purple);
+    color: var(--green700);
     font-size: 1rem;
     text-align: left;
 }
@@ -127,7 +145,7 @@ p {
     text-decoration: underline;
 }
 .about ul {
-    color: var(--dark-purple);
+    color: var(--green700);
     font-size: 1rem;
     text-align: left;
     margin-top: -20px;
@@ -148,13 +166,14 @@ p {
     }
 }
 .browser {
-    background: var(--butter-yellow);
+    background: var(--white100);
+    background: var(--green100);
     max-width: 90%;
     width: 500px;
     border-radius: 15px;
-    border: 2px solid var(--dark-gray);
+    border: 2px solid var(--black900);
     overflow: hidden;
-    box-shadow: 10px 10px 0px 0px var(--dark-gray);
+    box-shadow: 10px 10px 0px 0px var(--green700);
     margin: auto;
     transform: translateY(-55px);
 }
@@ -162,32 +181,35 @@ p {
     padding: 12px 24px;
     border-radius: 50px;
     background: white;
-    border: 2px solid var(--dark-purple);
-    box-shadow: 6px 6px 0px 0px var(--dark-purple);
+    border: 2px solid var(--green700);
+    box-shadow: 6px 6px 0px 0px var(--green700);
     text-decoration: none;
     text-shadow: none;
-    color: var(--dark-purple);
+    color: var(--green700);
     font-family: "Funnel Display", sans-serif;
 }
 .cta-2 {
     padding: 4px 15px;
     border-radius: 50px;
-    border: 2px solid var(--dark-gray);
-    box-shadow: 6px 6px 0px 0px var(--dark-gray);
+    border: 2px solid var(--black900);
+    box-shadow: 6px 6px 0px 0px var(--black900);
     text-decoration: none;
     text-shadow: none;
-    color: var(--dark-gray);
-    background-color: var(--lilac200);
+    color: var(--black900);
+    background-color: var(--white100);
 }
 .cta-2:hover {
-    box-shadow: 9px 9px 0px 0px var(--dark-gray);
+    box-shadow: 9px 9px 0px 0px var(--black900);
     background-color: white;
+}
+.cta-2.active_link{
+    background-color: var(--green200);
 }
 .browser .browser-top {
     width: 100%;
     height: 50px;
-    background: var(--dark-purple);
-    border-bottom: 2px solid var(--dark-gray);
+    background: var(--green800);
+    border-bottom: 2px solid var(--black900);
     display: flex;
     align-items: center;
     justify-content: start;
@@ -195,7 +217,7 @@ p {
     padding-left: 15px;
 }
 .browser .browser-top .circle {
-    background: #FFF5E2;
+    background: var(--green100);
     border-radius: 50%;
     height: 18px;
     width: 18px;
@@ -209,7 +231,7 @@ p {
 }
 footer {
     box-sizing: border-box;
-    background-color: var(--dark-gray);
+    background-color: var(--green700);
     color: white;
     font-family: "Courier Prime", monospace;
     text-align: center;
@@ -228,11 +250,12 @@ footer ul{
     margin:0;
     padding:0;
 }
-footer a{
+footer a, footer a:visited{
     color: white;
 }
 footer a:hover{
-    color: var(--lilac500);
+    color: var(--green500);
+    text-decoration-thickness: 1px;
 }
 .planning-more-info {
     padding: 0px 20px 75px 20px;
