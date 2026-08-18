@@ -29,11 +29,11 @@
     z-index: 0;
     margin-top: 0;
 }
-ul {
+ul.info-list {
     padding: 0;
     list-style: none;
 }
-li{
+.info-list li{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@ img.picto{
 .second-row .left img {
     max-width: min(400px, 70vw);
     margin: auto;
-    margin-top: 15px;
+    margin-top: 45px;
     position: sticky;
     top: 0;
 }

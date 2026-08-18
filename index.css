@@ -6,3 +6,16 @@
     height:100%;
     object-fit: contain;
 }
+.next-event>.title{
+    margin-bottom:1rem;
+}
+.event-title {
+    margin:0;
+    letter-spacing: 3px;
+    color: var(--green500);
+    text-transform: uppercase;
+    text-shadow: 1.5px 1.5px 0 var(--black900), 1.5px -1.5px 0 var(--black900), -1.5px 1.5px 0 var(--black900), -1.5px -1.5px 0 var(--black900), 1.5px 0px 0 var(--black900), 0px 1.5px 0 var(--black900), -1.5px 0px 0 var(--black900), 0px -1.5px 0 var(--black900);
+}
+.next-event .row {
+    margin-bottom: 1.5rem;
+}

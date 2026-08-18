@@ -1,5 +1,4 @@
 .browser.browser-calendar {
-    margin-top: 40px;
     background: var(--white100);
 }
 @media (min-width: 700px) {
