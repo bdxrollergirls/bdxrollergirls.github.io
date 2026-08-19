@@ -6,7 +6,7 @@
     height:100%;
     object-fit: contain;
 }
-.next-event>.title{
+.title-2{
     margin-bottom:1rem;
 }
 .event-title {
@@ -18,4 +18,15 @@
 }
 .next-event .row {
     margin-bottom: 1.5rem;
+}
+
+.devenir{
+    margin-top:2rem;
+    margin-bottom: 3rem;
+}
+
+ul.devenir-list {
+    list-style: none;
+    margin:0;
+    padding:0;
 }
