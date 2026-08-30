@@ -161,31 +161,51 @@ document.addEventListener("DOMContentLoaded", () => {
       //       4: { color: "theme0", items: ["Début des vacances d'été"] },
       //   }
       // },
-      {
-        monthName: "août",
-        yearName: "2026",
-        startDay: 5,
-        totalDays: 31,
-        events: {
-            31: { color: "theme0", items: ["Fin des vacances d'été"] },
-        }
-      },
+      // {
+      //   monthName: "août",
+      //   yearName: "2026",
+      //   startDay: 5,
+      //   totalDays: 31,
+      //   events: {
+      //       31: { color: "theme0", items: ["Fin des vacances d'été"] },
+      //   }
+      // },
       {
         monthName: "septembre",
         yearName: "2026",
         startDay: 1,
         totalDays: 30,
         events: {
-            7: { color: "theme1", items: ["Meetup @ TBD, 19h - 20h30"] },
+            7: { color: "theme1", items: ["Meetup @ Crs du Chapeau rouge, 19h - 20h30"] },
+        }
+      },
+      {
+        monthName: "octobre",
+        yearName: "2026",
+        startDay: 3,
+        totalDays: 31,
+        events: {
+            5: { color: "theme1", items: ["Meetup @ TDB, 19h - 20h30"] },
+            31: { color: "theme31", items: ["Rollerween @ TBD"] },
+        }
+      },
+      {
+        monthName: "novembre",
+        yearName: "2026",
+        startDay: 6,
+        totalDays: 30,
+        events: {
+            2: { color: "theme1", items: ["Meetup @ TDB, 19h - 20h30"] },
+            10: { color: "theme3", items: ["Roller Tuesday @ Delirium, 20h30-23h30"] },
         }
       },
     ];
     const vacationRanges = [
         // { start: { month: "octobre", day: 18 }, end: { month: "novembre", day: 2 } },
-        { start: { month: "décembre", day: 20 }, end: { month: "janvier", day: 4 } },
-        { start: { month: "février", day: 7 }, end: { month: "février", day: 22 } },
-        { start: { month: "avril", day: 4 }, end: { month: "avril", day: 19 } },
-        { start: { month: "juillet", day: 4 }, end: { month: "août", day: 31 } },
+        // { start: { month: "décembre", day: 20 }, end: { month: "janvier", day: 4 } },
+        // { start: { month: "février", day: 7 }, end: { month: "février", day: 22 } },
+        // { start: { month: "avril", day: 4 }, end: { month: "avril", day: 19 } },
+        // { start: { month: "juillet", day: 4 }, end: { month: "août", day: 31 } },
         // { start: { month: "juillet", day: 4 }, end: { month: "septembre", day: 1 } },
     ];
 
